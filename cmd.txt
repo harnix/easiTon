@@ -1,0 +1,11 @@
+ssh -i useAWS.pem ubuntu@ec2-18-218-15-56.us-east-2.compute.amazonaws.com
+
+sudo docker run --name bot-solana1 \
+  --network=host bloxroute/solana-gateway:latest \
+  -auth-header=MTI5NWY5Y2ItMWNmNS00M2QyLWI5YjUtMTc1MjVhZjM4M2JhOmQ4M2U4ZDhhYmVmZTY1YTUxODRmNjk5OWUwMWFmNjFl \
+  -network-interface=ens5 \
+  -tvu-port=8001 \
+  -bdn-host=ny.solana.blxrbdn.com \
+  -bdn-port=8888 \
+  -bdn-grpc-port=5005 \
+  -port=18888

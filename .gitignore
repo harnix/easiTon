@@ -1,0 +1,6 @@
+/node_modules
+/tbdex_PFI
+.env
+.cmd.txt
+streamer.js
+userAWS.pem
